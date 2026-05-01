@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -64,13 +69,13 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ['Cinzel', 'serif'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        display: ["Cinzel", "serif"],
+        serif: ['"Cormorant Garamond"', "Georgia", "serif"],
       },
       backgroundImage: {
-        'gradient-mystic': 'var(--gradient-mystic)',
-        'gradient-glow': 'var(--gradient-glow)',
-        'gradient-veil': 'var(--gradient-veil)',
+        "gradient-mystic": "var(--gradient-mystic)",
+        "gradient-glow": "var(--gradient-glow)",
+        "gradient-veil": "var(--gradient-veil)",
       },
       keyframes: {
         "accordion-down": {

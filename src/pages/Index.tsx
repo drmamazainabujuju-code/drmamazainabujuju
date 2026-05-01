@@ -24,52 +24,62 @@ import FloatingContact from "@/components/FloatingContact";
 
 const PHONE = "+254790708623";
 const WHATSAPP_URL = `https://wa.me/254790708623?text=${encodeURIComponent(
-  "Hello Dr. Mama Zainabu Juju, I would like to book a consultation."
+  "Hello Dr. Mama Zainabu Juju, I would like to book a consultation.",
 )}`;
 
 const services = [
   {
     icon: Heart,
     title: "Perfect Marriage / Fix Marriage",
+    imagePath: "/services/marriage-binding-ritual.webp",
     desc: "Restore harmony, trust and devotion in your union with time-honoured rituals that mend broken bonds.",
   },
   {
     icon: Sparkles,
+    imagePath: "/services/Marriage-Relationship-Support.jpg",
     title: "Love Portion & Bring Back Lost Love",
     desc: "Reignite passion and call back a lover who has drifted away — gently, but with unmistakable power.",
   },
   {
     icon: Briefcase,
+    imagePath:
+      "/services/JOB-SPELL-Get-a-Job-Employment-Career-Magic-Dream-Job-1024x768.webp",
     title: "Business Ritual",
     desc: "Unlock your business potential and achieve lasting success through prosperity rites and sacred guidance.",
   },
   {
     icon: Flame,
+    imagePath: "/services/Spiritual-Cleansing-Rituals-For-You-Your-Home.jpg",
     title: "Spiritual Cleansing",
     desc: "Release heavy energies and curses. Walk a transformative path of healing, peace and clarity.",
   },
   {
     icon: Gem,
+    imagePath: "/services/magic-ring-and-charms-ritual.jpg",
     title: "Lucky Rings",
     desc: "Hand-crafted rings charged for love, business success and protection. Carry fortune wherever you go.",
   },
   {
     icon: Search,
+    imagePath: "/services/Spiritual-Protection-Safety-Guidance.jpg",
     title: "Recover Lost Property",
     desc: "Powerful herbs and spiritual practice to reclaim what is rightfully yours and shield it from theft.",
   },
   {
     icon: Scale,
+    imagePath: "/services/Court-Case-Legal-Guidance-win-court-case.jpg",
     title: "Win Court Cases",
     desc: "Walk into court with confidence. Cultural guidance for clarity, focus and a favourable outcome.",
   },
   {
     icon: Baby,
+    imagePath: "/services/women-Family-Fertility-Support.avif",
     title: "Family & Fertility Support",
     desc: "Compassionate spiritual support for couples seeking children, family unity and ancestral blessings.",
   },
   {
     icon: TrendingUp,
+    imagePath: "/services/Business-Financial-Growth-Guidance.jpg",
     title: "Business & Financial Growth",
     desc: "Align with abundance. Cultural rituals that nurture discipline, opportunity and steady wealth.",
   },
@@ -152,15 +162,29 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <nav className="container flex items-center justify-between py-4">
-          <a href="#top" className="font-display text-lg sm:text-xl tracking-wider">
+          <a
+            href="#top"
+            className="font-display text-lg sm:text-xl tracking-wider"
+          >
             <span className="text-accent text-glow">Dr.</span> Mama Zainabu{" "}
             <span className="text-secondary-foreground/80">Juju</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#services" className="hover:text-accent transition-smooth">Services</a>
-            <a href="#about" className="hover:text-accent transition-smooth">About</a>
-            <a href="#why" className="hover:text-accent transition-smooth">Why Her</a>
-            <a href="#testimonials" className="hover:text-accent transition-smooth">Testimonials</a>
+            <a href="#services" className="hover:text-accent transition-smooth">
+              Services
+            </a>
+            <a href="#about" className="hover:text-accent transition-smooth">
+              About
+            </a>
+            <a href="#why" className="hover:text-accent transition-smooth">
+              Why Her
+            </a>
+            <a
+              href="#testimonials"
+              className="hover:text-accent transition-smooth"
+            >
+              Testimonials
+            </a>
           </div>
           <a
             href={`tel:${PHONE}`}
@@ -172,7 +196,10 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative min-h-screen flex items-center pt-24">
+      <section
+        id="top"
+        className="relative min-h-screen flex items-center pt-24"
+      >
         <img
           src={heroImg}
           alt="Mystical witch doctor altar with candles, herbs and bones"
@@ -188,16 +215,17 @@ const Index = () => {
               <Sparkles className="h-3.5 w-3.5" /> Spiritual Healer • Kenya
             </span>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] font-bold">
-              Dr. Mama <span className="text-accent text-glow">Zainabu Juju</span>
+              Dr. Mama{" "}
+              <span className="text-accent text-glow">Zainabu Juju</span>
               <br />
               <span className="text-secondary-foreground/90 italic font-normal text-3xl sm:text-4xl lg:text-5xl">
                 Witch Doctor & Spiritual Healer
               </span>
             </h1>
             <p className="max-w-2xl text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Ancient African wisdom for modern troubles. Heal broken hearts, restore marriages,
-              unlock prosperity and reclaim what was lost — through sacred rituals passed down
-              through generations.
+              Ancient African wisdom for modern troubles. Heal broken hearts,
+              restore marriages, unlock prosperity and reclaim what was lost —
+              through sacred rituals passed down through generations.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <a
@@ -241,7 +269,10 @@ const Index = () => {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="container py-24 grid lg:grid-cols-2 gap-14 items-center">
+      <section
+        id="about"
+        className="container py-24 grid lg:grid-cols-2 gap-14 items-center"
+      >
         <div className="relative">
           <img
             src={ritualImg}
@@ -252,24 +283,32 @@ const Index = () => {
             loading="lazy"
           />
           <div className="absolute -bottom-6 -right-6 bg-mystic rounded-xl px-6 py-4 shadow-purple hidden sm:block">
-            <div className="font-display text-3xl text-glow text-accent">25+</div>
-            <div className="text-xs uppercase tracking-widest text-foreground/80">Years of Service</div>
+            <div className="font-display text-3xl text-glow text-accent">
+              25+
+            </div>
+            <div className="text-xs uppercase tracking-widest text-foreground/80">
+              Years of Service
+            </div>
           </div>
         </div>
         <div className="space-y-6">
-          <span className="text-xs uppercase tracking-[0.3em] text-accent">About Mama Zainabu</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-accent">
+            About Mama Zainabu
+          </span>
           <h2 className="font-display text-4xl sm:text-5xl leading-tight">
-            A guardian of ancestral <span className="text-accent text-glow">spiritual power</span>
+            A guardian of ancestral{" "}
+            <span className="text-accent text-glow">spiritual power</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Born into a lineage of healers in the highlands of Kenya, Dr. Mama Zainabu Juju has
-            devoted her life to restoring balance — in love, family, business and spirit. Her
-            craft blends sacred herbs, ancestral chants and deep listening to bring peace to
-            those who seek her counsel.
+            Born into a lineage of healers in the highlands of Kenya, Dr. Mama
+            Zainabu Juju has devoted her life to restoring balance — in love,
+            family, business and spirit. Her craft blends sacred herbs,
+            ancestral chants and deep listening to bring peace to those who seek
+            her counsel.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Whether you carry a heavy heart, a broken home, or a dream that refuses to bloom,
-            her door — and her altar — are open to you.
+            Whether you carry a heavy heart, a broken home, or a dream that
+            refuses to bloom, her door — and her altar — are open to you.
           </p>
           <div className="flex gap-3 pt-2">
             <a
@@ -285,26 +324,32 @@ const Index = () => {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="relative py-24 border-y border-border/60 bg-card/40">
+      <section
+        id="services"
+        className="relative py-24 border-y border-border/60 bg-card/40"
+      >
         <div className="container">
           <div className="max-w-2xl mx-auto text-center mb-16 space-y-4">
-            <span className="text-xs uppercase tracking-[0.3em] text-accent">Sacred Services</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-accent">
+              Sacred Services
+            </span>
             <h2 className="font-display text-4xl sm:text-5xl">
-              Rituals that <span className="text-accent text-glow">transform lives</span>
+              Rituals that{" "}
+              <span className="text-accent text-glow">transform lives</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              From the affairs of the heart to the wars of the courtroom — Mama Zainabu walks
-              with you, every step.
+              From the affairs of the heart to the wars of the courtroom — Mama
+              Zainabu walks with you, every step.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map(({ icon: Icon, title, desc }) => (
+            {services.map(({ icon: Icon, imagePath, title, desc }) => (
               <article
                 key={title}
-                className="group relative rounded-2xl border border-border bg-card p-7 shadow-deep transition-smooth hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow"
+                className="group relative rounded-2xl space-y-4 border border-border bg-card p-7 shadow-deep transition-smooth hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow"
               >
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-mystic shadow-purple group-hover:animate-flicker">
-                  <Icon className="h-6 w-6 text-accent" />
+                <div>
+                  <img src={imagePath} className="w-full h-72 object-cover" />
                 </div>
                 <h3 className="font-display text-xl mb-2">{title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{desc}</p>
@@ -315,14 +360,17 @@ const Index = () => {
           {/* Lucky rings showcase */}
           <div className="mt-20 grid lg:grid-cols-2 gap-10 items-center rounded-3xl border border-border bg-background/60 p-8 lg:p-12 shadow-deep">
             <div>
-              <span className="text-xs uppercase tracking-[0.3em] text-accent">Lucky Rings</span>
+              <span className="text-xs uppercase tracking-[0.3em] text-accent">
+                Lucky Rings
+              </span>
               <h3 className="font-display text-3xl sm:text-4xl mt-3 mb-4">
-                Carry your fortune <span className="text-accent text-glow">always</span>
+                Carry your fortune{" "}
+                <span className="text-accent text-glow">always</span>
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Each ring is hand-crafted, blessed and charged with intention — for love, for
-                business, for protection. Worn close to the skin, they become a constant
-                whisper of fortune in your favour.
+                Each ring is hand-crafted, blessed and charged with intention —
+                for love, for business, for protection. Worn close to the skin,
+                they become a constant whisper of fortune in your favour.
               </p>
               <a
                 href={WHATSAPP_URL}
@@ -348,12 +396,16 @@ const Index = () => {
       {/* WHY HER */}
       <section id="why" className="container py-24">
         <div className="max-w-2xl mx-auto text-center mb-14 space-y-4">
-          <span className="text-xs uppercase tracking-[0.3em] text-accent">Why Choose Her</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-accent">
+            Why Choose Her
+          </span>
           <h2 className="font-display text-4xl sm:text-5xl">
-            Why I chose <span className="text-accent text-glow">Dr. Mama Zainabu Juju</span>
+            Why I chose{" "}
+            <span className="text-accent text-glow">Dr. Mama Zainabu Juju</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Power without compassion is dangerous. Compassion without power is empty. She holds both.
+            Power without compassion is dangerous. Compassion without power is
+            empty. She holds both.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -366,19 +418,27 @@ const Index = () => {
                 <Icon className="h-7 w-7 text-accent" />
               </div>
               <h3 className="font-display text-lg mb-2">{title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="testimonials" className="relative py-24 border-y border-border/60 bg-card/40">
+      <section
+        id="testimonials"
+        className="relative py-24 border-y border-border/60 bg-card/40"
+      >
         <div className="container">
           <div className="max-w-2xl mx-auto text-center mb-14 space-y-4">
-            <span className="text-xs uppercase tracking-[0.3em] text-accent">Voices of the Healed</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-accent">
+              Voices of the Healed
+            </span>
             <h2 className="font-display text-4xl sm:text-5xl">
-              Real stories. <span className="text-accent text-glow">Real change.</span>
+              Real stories.{" "}
+              <span className="text-accent text-glow">Real change.</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -414,10 +474,12 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-glow" />
           <div className="relative space-y-6 max-w-2xl mx-auto">
             <h2 className="font-display text-4xl sm:text-5xl">
-              Your transformation begins with <span className="text-accent text-glow">one call</span>
+              Your transformation begins with{" "}
+              <span className="text-accent text-glow">one call</span>
             </h2>
             <p className="text-foreground/85 text-lg">
-              Speak directly with Dr. Mama Zainabu Juju. Confidential. Compassionate. Powerful.
+              Speak directly with Dr. Mama Zainabu Juju. Confidential.
+              Compassionate. Powerful.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-2">
               <a
@@ -445,17 +507,22 @@ const Index = () => {
           <div className="lg:col-span-2 space-y-4">
             <h3 className="font-display text-xl text-accent">Disclaimer</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              The services provided by Dr. Mama Zainabu Juju are cultural and traditional
-              guidance for personal reflection, emotional balance, and spiritual support. They
-              are not intended as medical, legal, financial, or professional advice. Results may
-              vary, and no guarantees are made. By using this website, you confirm that you are
-              21 years of age or older. Dr. Mama Zainabu Juju encourages responsible use of
-              services and emphasizes personal reflection, cultural alignment, and well-being.
+              The services provided by Dr. Mama Zainabu Juju are cultural and
+              traditional guidance for personal reflection, emotional balance,
+              and spiritual support. They are not intended as medical, legal,
+              financial, or professional advice. Results may vary, and no
+              guarantees are made. By using this website, you confirm that you
+              are 21 years of age or older. Dr. Mama Zainabu Juju encourages
+              responsible use of services and emphasizes personal reflection,
+              cultural alignment, and well-being.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-display text-xl">Reach Out</h3>
-            <a href={`tel:${PHONE}`} className="flex items-center gap-2 text-sm hover:text-accent transition-smooth">
+            <a
+              href={`tel:${PHONE}`}
+              className="flex items-center gap-2 text-sm hover:text-accent transition-smooth"
+            >
               <Phone className="h-4 w-4 text-accent" /> {PHONE}
             </a>
             <a
@@ -464,13 +531,17 @@ const Index = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm hover:text-accent transition-smooth"
             >
-              <MessageCircle className="h-4 w-4 text-accent" /> WhatsApp Mama Zainabu
+              <MessageCircle className="h-4 w-4 text-accent" /> WhatsApp Mama
+              Zainabu
             </a>
-            <p className="text-xs text-muted-foreground pt-2">Serving clients across Kenya & East Africa.</p>
+            <p className="text-xs text-muted-foreground pt-2">
+              Serving clients across Kenya & East Africa.
+            </p>
           </div>
         </div>
         <div className="border-t border-border/60 py-5 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Dr. Mama Zainabu Juju — Spiritual Healer. All rights reserved.
+          © {new Date().getFullYear()} Dr. Mama Zainabu Juju — Spiritual Healer.
+          All rights reserved.
         </div>
       </footer>
 
